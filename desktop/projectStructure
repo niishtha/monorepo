@@ -1,0 +1,86 @@
+I have a question related to yarn workspaces. 
+Suppose this is a monorepo
+
+Team-A
+├── package-1
+│   ├── src
+│   │   ├── mock.js
+│   └── package.json
+├── package-2
+│   ├── src
+│   │   ├── date.js
+│   └── package.json
+├── package-3
+│   ├── src
+│   │   ├── api.js
+│   └── package.json
+├── main-app
+│   ├── src
+│   │   ├── app.js
+│   └── package.json
+├── dist (or build)
+├── node_modules
+├── README.md
+├── package.json
+├── .eslintrc
+├── .prettierrc
+├── babel.config.js
+└── .gitignore
+
+Team A has its own monorepo and packages correspond to either pod's or business specific projects of Team-A. This project has no workspaces inside it, this whole project is one workspace.
+
+Now let's look at one more project structure
+Company
+|
+|--Team-A
+|   ├── package-1
+|   │   ├── src
+|   │   │   ├── mock.js
+|   │   └── package.json
+|   ├── package-2
+|   │   ├── src
+|   │   │   ├── date.js
+|   │   └── package.json
+|   ├── package-3
+|   │   ├── src
+|   │   │   ├── api.js
+|   │   └── package.json
+|   ├── main-app
+|   │   ├── src
+|   │   │   ├── app.js
+|   │   └── package.json
+|   ├── dist (or build)
+|   ├── node_modules
+|   ├── README.md
+|   ├── package.json
+|   ├── .eslintrc
+|   ├── .prettierrc
+|   ├── babel.config.js
+|   └── .gitignore
+|--Team-B
+|   ├── package-1
+|   │   ├── src
+|   │   │   ├── mock.js
+|   │   └── package.json
+|   ├── package-2
+|   │   ├── src
+|   │   │   ├── date.js
+|   │   └── package.json
+|   ├── package-3
+|   │   ├── src
+|   │   │   ├── api.js
+|   │   └── package.json
+|   ├── main-app
+|   │   ├── src
+|   │   │   ├── app.js
+|   │   └── package.json
+|   ├── dist (or build)
+|   ├── node_modules
+|   ├── README.md
+|   ├── package.json
+|   ├── .eslintrc
+|   ├── .prettierrc
+|   ├── babel.config.js
+|   └── .gitignore
+|
+
