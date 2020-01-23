@@ -5,7 +5,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = function(){
   return {
-    mode: 'development',
+    mode: 'production',
     entry: {
       main : path.resolve(__dirname, './src/index.js'),
     },
@@ -41,6 +41,7 @@ module.exports = function(){
         },
       },
       runtimeChunk: 'single',
+      concatenateModules: false,
     },
     plugins: [
       new BundleAnalyzerPlugin(),
