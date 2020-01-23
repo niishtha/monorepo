@@ -19,6 +19,7 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
     "babel-eslint": "^10.0.3",
+    "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^9.9.9",
     "eslint-plugin-react": "^7.17.0",
     "lerna": "^3.20.2"

@@ -6,7 +6,8 @@
   "author": "Sumit Gupta",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "private": true,
   "devDependencies": {
