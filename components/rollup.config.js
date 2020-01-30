@@ -14,11 +14,13 @@ export default {
     format: moduleType,
   },
   plugins: [
-    commonjs(),
+    commonjs({
+      exclude: 'src/**',
+    }),
     babel({
       exclude: 'node_modules/**',
-      plugins: ['@babel/plugin-external-helpers'],
-      externalHelpers: true,
+      plugins: ['@babel/plugin-transform-runtime'],
+      runtimeHelpers: true,
     })
   ]
 }
