@@ -1,11 +1,14 @@
 {
   "name": "rnw-comp-test",
-  "version": "1.0.0-test2",
+  "version": "1.0.0-test3",
   "description": "show how js module systems work",
   "author": "sumit gupta",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "build": "run-s clean build:*",
@@ -14,22 +17,22 @@
     "build:lib": "babel src -d lib"
   },
   "dependencies": {
-    "eslint": "^6.8.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-native-web": "^0.12.0",
-    "styled-components": "^5.0.0"
+    "eslint": "6.8.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-native-web": "0.12.0",
+    "styled-components": "5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/plugin-external-helpers": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@rollup/plugin-commonjs": "^11.0.1",
-    "eslint": "^6.8.0",
-    "npm-run-all": "^4.1.5",
-    "rollup": "^1.29.1",
-    "rollup-plugin-babel": "^4.3.3"
+    "@babel/core": "7.8.3",
+    "@babel/plugin-external-helpers": "7.8.3",
+    "@babel/plugin-transform-runtime": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@rollup/plugin-commonjs": "11.0.1",
+    "eslint": "6.8.0",
+    "npm-run-all": "4.1.5",
+    "rollup": "1.29.1",
+    "rollup-plugin-babel": "4.3.3"
   },
   "directories": {
     "lib": "lib"
