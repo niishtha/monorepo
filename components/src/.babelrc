@@ -1,4 +1,14 @@
 {
   "extends": "../../babel.config.js",
-  "presets": ["@babel/env", "@babel/preset-react"]
+  "presets": ["@babel/env", "@babel/preset-react"],
+  "plugins": [
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"^react-native$": "react-native-web"
+				}
+			}
+		]
+	]
 }
